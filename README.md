@@ -6,12 +6,12 @@ Capistrano tasks used to deploy theme.
 
 ```ruby
 #add this line in your Gemfile
-gem 'capistrano-theme-uploader'
+gem 'capistrano-magepack'
 ```
 
 ```ruby
 #add this line in your Capfile
-require 'capistrano/capistrano-theme-uploader'
+require 'capistrano/capistrano-magepack'
 ```
 Then run 
 ```shell
@@ -33,5 +33,5 @@ set :themes_to_deploy, [
 The default capistrano workflow is used with the addition of theses tasks.
 
 ```ruby
-after 'deploy:updating', 'wp-capistrano:upload_theme'
+after 'deploy:published', 'capistrano-magepack:bundle_js'
 ```

@@ -1,2 +1,2 @@
 # Default Flow
-after 'deploy:published', 'capistrano-magepack:bundle_js'
+after 'deploy:finished', 'capistrano-magepack:bundle_js'
