@@ -18,16 +18,6 @@ Then run
 bundle install 
 #or bundle update
 ```
-set following variables in your deploy.rb
-These variables will be used to generate wp_config.php at first deployment.
-And will install an empty wordpress
-```ruby
-set :themes_to_deploy, [
-  'wp-content/themes/my-theme'
-]
-
-```
-
 ## Workflow
 
 The default capistrano workflow is used with the addition of theses tasks.
